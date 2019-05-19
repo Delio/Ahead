@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import  SpriteKit
+import SpriteKit
 
 
 class Player: SKSpriteNode {
@@ -27,5 +27,6 @@ class Player: SKSpriteNode {
         name = "player"
         physicsBody = SKPhysicsBody(circleOfRadius: frame.size.width / 2)
         position = CGPoint(x: 200, y: 200)
+        physicsBody?.isDynamic = false
     }
 }
